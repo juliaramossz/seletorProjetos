@@ -1,39 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 1 - Display</title>
-    <link rel="stylesheet" href="../../framework/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto 1 - Display</title>
+  <link rel="stylesheet" href="../../framework/bootstrap-5.3.7-dist/css/bootstrap.min.css">
 
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
+    body {
+      overflow-x: hidden;
+    }
+    .cabecalho{
+      background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
 
+    .color{
+      background-color: #94BBE9;
+    }
+
+  </style>
 
 </head>
-<body>
-    <header>
-        <div id="cabeçalho" >
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary corPreto">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Projetos</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-                    <span class="navbar-toggler-icon"></span>
+<body class="d-flex flex-column min-vh-100">
+  <!-- CABEÇALHO -->
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary cabecalho">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: white;">Explicando Display</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: white;">Em desenvolvimento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- CONTEÚDO COM AS SECTIONS DA PÁGINA -->
+  <main class="flex-fill">
+    <section>
+
+      <div style="height: 90vh;">
+        <div class="row" style="height: 90vh; " >
+          <div class="col-12 col-md-6"
+            style="background-color: rgb(250, 204, 232); display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <h1 style="color: white;">VENHA APRENDER HTML E CSS</h1>
+            <br>
+            <br>
+            <p style="color: white;">Guia feito para os queridos do sesi</p>
+            <br>
+            <button type="button" class="btn btn-light" style="color: rgb(211, 160, 196);">Clique aqui para aprender Display</button>
+          </div>
+          <div class="col-6"  style="background-color: (250, 242, 250); display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <h2 style="color: rgb(210, 142, 236);">Conteúdos:</h2>
+            <br>
+            <br>
+            <div class="accordion accordion-flush" id="accordionFlushExample " style="width: 80%;">
+              <div class="accordion-item">
+                <h2 class="accordion-header" >
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" style="background-color: rgb(250, 242, 250);"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    HTML 5
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Em desenvolvimento</a>
-                      </li>
-                      </li>
-                    </ul>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    O HTML5 é a quinta e mais recente versão da linguagem de marcação de hipertexto (HTML), usada para estruturar o conteúdo de páginas web. Ele introduz novos elementos e funcionalidades que facilitam o desenvolvimento de sites modernos, com foco em interatividade, multimídia e compatibilidade com dispositivos móveis. 
                   </div>
                 </div>
-              </nav>
-    
+              </div>
+              <div class="accordion-item" >
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" style="background-color: rgb(250, 242, 250);"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    CSS
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">CSS, ou Folhas de Estilo em Cascata, é uma linguagem usada para descrever a apresentação de documentos HTML ou XML. Em termos simples, o CSS define como os elementos de uma página web devem ser exibidos, incluindo cores, fontes, layout e outros aspectos visuais. O CSS trabalha em conjunto com o HTML, que define a estrutura do conteúdo, enquanto o CSS adiciona estilo e apresentação. </div>
+                </div>
+              </div>
             </div>
-    
-        </header>
-<script src="../../framework/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+          </div>
+        </div>
+    </section>
+    <section>
+
+      <div style="height: 50vh; background-color: #94BBE9; display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <h1 style="color: white;">
+          O que é a propriedade Display em CSS
+        </h1>
+        <br>
+        <p style="color: white;">
+          
+          Em CSS, a propriedade display determina como um elemento HTML é renderizado na página. Ela define se o elemento se comporta como um bloco, um elemento em linha ou se é ocultado. A propriedade display é fundamental para o layout e a disposição dos elementos em uma página web. 
+
+        </p>
+      </div>
+      <div style="height: 50vh;overflow-y: scroll; ">
+        <table class="table table-hover table-responsive-sm mt-5">
+          <thead>
+            <tr>
+              <th scope="col">Display</th>
+              <th scope="col">características</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">block</th>
+              <td>
+                Elementos com display BLOCK, também com um nome bem semântico, são elementos que se comportam como um “bloco” na página, cuja largura sempre vai ocupar 100% da largura do elemento-pai.
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Inline</th>
+              <td>
+                inline" refere-se a um tipo de elemento que não começa em uma nova linha e ocupa apenas o espaço necessário para seu conteúdo. Ao contrário dos elementos de bloco, que ocupam toda a largura disponível, os elementos inline fluem dentro do conteúdo, como em um parágrafo. 
+              </td>
+            
+            </tr>
+            <tr>
+              <th scope="row">Inline-Block</th>
+              <td>
+                Para que serve o inline block?
+é aí que o inline-block junta as 2 características. Com o inline-block você terá o comportamento de um elemento inline, porém permitindo que altere as margens, altura, largura e padding do seu elemento assim como um elemento do tipo block.
+              </td>
+            <tr>
+              <th scope="row">Flex</th>
+              <td>
+                é uma ferramenta poderosa para criar layouts responsivos e flexíveis em páginas web. Ele permite organizar e alinhar itens dentro de um contêiner de forma que se adaptem a diferentes tamanhos de tela e dispositivos. 
+              </td>
+            </tr>
+          
+
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer mt-auto cabecalho">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#" style="color: white;"> © TODOS OS DIREITOS RESERVADOS 2025</a>
+      </li>
+    </ul>
+  </footer>
+
+
+  <script src="../../framework/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

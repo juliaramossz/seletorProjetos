@@ -20,13 +20,12 @@
     color: rgb(255, 189, 220);
 }
 
-.corPreto a:active{
-    color: rgb(171, 255, 171);
+.corPreto a:focus{
+    color: rgb(184, 255, 157);
 }
 
-body{
+.body{
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 #p{
